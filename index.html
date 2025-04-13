@@ -5,59 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mi Portafolio | Arturo Martinez Delgado</title>
   <style>
+    :root {
+      --bg: #121212;
+      --card: #1e1e1e;
+      --text: #e0e0e0;
+      --accent: #00bcd4;
+      --accent-hover: #26c6da;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: var(--bg);
+      color: var(--text);
     }
+
     header {
-      background: #3b5998;
-      color: white;
+      background: var(--card);
       padding: 2rem;
       text-align: center;
+      border-bottom: 2px solid var(--accent);
     }
+
     header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
+
+    header p {
+      margin-top: 0.5rem;
+      color: #aaa;
+    }
+
     nav {
       text-align: center;
       margin-top: 1rem;
     }
+
     nav a {
       margin: 0 15px;
-      color: white;
+      color: var(--accent);
       text-decoration: none;
       font-weight: bold;
     }
+
+    nav a:hover {
+      color: var(--accent-hover);
+    }
+
     section {
       max-width: 900px;
       margin: 2rem auto;
-      padding: 1rem;
-      background: white;
+      padding: 1.5rem;
+      background: var(--card);
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
     }
+
     h2 {
-      color: #3b5998;
+      color: var(--accent);
     }
+
     ul {
       padding-left: 1.2rem;
     }
+
+    ul li {
+      margin-bottom: 0.8rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
-      background: #3b5998;
-      color: white;
+      background: var(--card);
+      color: #777;
       margin-top: 2rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Tu Nombre</h1>
+    <h1>Arturo Martinez Delgado</h1>
     <p>Desarrollador | Estudiante | Entusiasta de la Tecnología</p>
     <nav>
       <a href="#proyectos">Proyectos</a>
@@ -69,8 +110,8 @@
   <section id="proyectos">
     <h2>💻 Proyectos</h2>
     <ul>
-      <li><a href="https://github.com/ArturoMD7/AI_Assistant_Crowpi.git" target="_blank">GAMMA</a> -  Asistente virtual para la Crowpi</li>
-      <li><a href="https://github.com/ArturoMD7/Neurosoft_Backend.git" target="_blank">Neurosoft</a> - Software para uso medico para detectar ACV</li>
+      <li><a href="https://github.com/ArturoMD7/AI_Assistant_Crowpi.git" target="_blank">GAMMA</a> - Asistente virtual para la CrowPi</li>
+      <li><a href="https://github.com/ArturoMD7/Neurosoft_Backend.git" target="_blank">Neurosoft</a> - Software médico para detección de ACV</li>
     </ul>
   </section>
 
